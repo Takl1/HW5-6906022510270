@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gridstyle.css">
+    <title>Products - AURA</title>
+</head>
+<body>
+<div class="grid-container">
+    
+  <div class="header">
+  </div>
+  
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="product.html">Products</a>
+  </div>
+  
+  <div class="left">
+    <h1>Our Catalog</h1>
+    <p>Browse products and details below.</p>
+    <img src="/images/product1.jpg" alt="Our Catalog - Headphones">
+  </div>
+  
+  <div class="middle">
+    <h1>Product Name</h1>
+    <p>Short description, price, and actions (add to cart, view details)</p>
+    <img src="/images/product2.jpg" alt="Product details">
+  </div>
+  
+  <div class="right">
+    <form action="#">
+      <br><p>สมัครสมาชิก</p>
+      
+      <label for="fname">ชื่อ</label><br>
+      <input type="text" id="fname" name="fname" placeholder="ชื่อจริง" required><br><br>
+
+      <label for="lname">นามสกุล</label><br>
+      <input type="text" id="lname" name="lname" placeholder="นามสกุล" required><br><br>
+
+      <label for="email">อีเมล</label><br>
+      <input type="email" id="email" name="email" placeholder="example@domain.com" required><br><br>
+
+      <label for="password">รหัสผ่าน</label><br>
+      <input type="password" id="password" name="password" placeholder="อย่างน้อย 8 ตัวอักษร" required><br><br>
+
+      <label for="confirm_password">ยืนยันรหัสผ่าน</label><br>
+      <input type="password" id="confirm_password" name="confirm_password" placeholder="ยืนยันรหัสผ่าน" required><br><br>
+
+      <label for="phone">เบอร์โทรศัพท์</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}|[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="083-xxx-xxxx" required><br><br>
+
+      <br><b>เพศ</b><br><br>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">ชาย</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">หญิง</label><br>
+      <input type="radio" id="Not_specified" name="gender" value="other">
+      <label for="Not_specified">ไม่ระบุ</label>
+
+      <br><br>
+      <input type="checkbox" id="news" name="news" value="News">
+      <label for="news">รับข่าวสาร</label>
+      <input type="checkbox" id="promo" name="promo" value="promotion">
+      <label for="promo">โปรโมชั่น</label>
+      <input type="checkbox" id="event" name="event" value="Event">
+      <label for="event">กิจกรรม</label>
+
+      <br><br><label for="member1">ประเภทสมาชิก</label> <br>
+      <select id="member1" name="member_type" required>
+        <option value="normal">ธรรมดา</option>
+        <option value="VIP">VIP</option>
+        <option value="Premium">Premium</option>
+      </select>
+
+      <br><br>
+      <input type="checkbox" id="terms" name="terms" value="accepted" required>
+      <label for="terms">ยอมรับข้อกำหนดและเงื่อนไข</label>
+
+      <button type="submit" class="submit-btn">สมัครสมาชิก</button>
+      <p class="privacy-note">เราจะเก็บข้อมูลของคุณเป็นความลับ</p>
+    </form>
+  </div>
+  
+  <div class="footer">
+  </div>
+  
+</div>
+</body>
+</html>

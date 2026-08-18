@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gridstyle.css">
+    <title>Index</title>
+</head>
+<body>
+<div class="grid-container">
+  <div class="header">
+  </div>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="product.html">Product</a>
+  </div>
+  <div class="left">
+    <h1>ยินดีต้อนรับสู่ร้านของเรา</h1>
+    <p>เรามีสินค้าหลากหลายและราคาพิเศษสำหรับคุณ</p>
+    <img src="/images/shop.jpg" alt="Shop">
+  </div>
+  <div class="middle">
+    <h1>ร้านอยู่จังหวัดปราจีนบุรี</h1>
+    <p>การเดินทางสะดวกเข้าได้สองทาง</p>
+    <img src="/images/map.png" width="670px" height="400px" alt="map">
+  </div>
+  <div class="right">
+    <form action="#">
+      <br><p>สมัครสมาชิก</p>
+      <label for="fname">ชื่อ</label><br>
+      <input type="text" id="fname" name="fname" placeholder="ชื่อจริง" required><br><br>
+
+      <label for="lname">นามสกุล</label><br>
+      <input type="text" id="lname" name="lname" placeholder="นามสกุล" required><br><br>
+
+      <label for="email">อีเมล</label><br>
+      <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+      <label for="email">รหัสผ่าน</label><br>
+      <input type="password" id="password" name="password" placeholder="อย่างน้อย 8 ตัวอักษร" required><br><br>
+
+      <label for="phone">เบอร์โทรศัพท์</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}|[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="083-xxx-xxxx"
+      required><br><br>
+
+      <br><b>เพศ</b><br><br>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">ชาย</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">หญิง</label><br>
+      <input type="radio" id="Not_specified" name="gender" value="other">
+      <label for="Not_specified">ไม่ระบุ</label>
+
+      <br><br><input type="checkbox" id="vehicle1" name="vehicle1" value="News">
+      <label for="vehicle1">รับข่าวสาร</label>
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="promotion">
+      <label for="vehicle1">โปรโมชั่น</label>
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Event">
+      <label for="vehicle1">กิจกรรม</label>
+
+      <br><br><label for="member1">ประเภทสมาชิก</label> <br>
+      <select id="member1" name="member_type" required>
+        <option value="" disabled selected>-- กรุณาเลือกประเภทสมาชิก --</option>
+        <option value="normal">Normal</option>
+        <option value="VIP">VIP</option>
+    <option value="Premium">Premium</option>
+      </select>
+
+      <br><br><label for="vol">Volume (between 0 and 50):</label>
+      <input type="range" id="vol" name="vol" min="0" max="50" value="25"
+      oninput="volOutput.value = this.value">
+      <output id="volOutput">25</output>
+
+      <br><br><input type="checkbox" id="vehicle1" name="vehicle1" value="News">
+      <label for="vehicle2">ยอมรับข้อตกลงและเงื่อนไข</label>
+
+      <button type="submit" class="submit-btn">สมัครสมาชิก</button>
+      <p class="privacy-note">เราจะเก็บข้อมูลของคุณเป็นความลับ</p>
+    </form>
+  </div>
+  <div class="footer">
+    <p></p>
+  </div>
+</div>
+</body>
+</html>

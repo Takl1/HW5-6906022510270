@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 68% 32%;
+  grid-template-areas: 
+    'header header'
+    'navbar  navbar'
+    'left   right'
+    'middle right'
+    'footer footer';
+}
+
+.small {
+  display: block;
+  font-size: 15px;
+}
+.privacy-note {
+  color: #555555;
+  font-size: 14px;
+  text-align: left;
+  margin-top: 10px;
+}
+.submit-btn {
+  width: 100%;
+  background-color: #000080;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  border: none;
+}
+
+.header {
+  border: 8px solid rgb(255, 255, 255);
+  grid-area: header;
+  padding: 8%;
+  text-align: center;
+  font-size: 35px;
+  background: url(../images/header.jpg) no-repeat center / cover;
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: rgb(139, 205, 250);
+  padding: 15px 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 14px 20px;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #000;
+}
+
+.left,
+.middle,
+.right {
+  border: 15px solid rgb(255, 255, 255);
+  padding: 25px;
+  height: auto;
+  background-color: rgb(139, 205, 250); 
+}
+
+.left {
+  grid-area: left;
+}
+.middle {
+  grid-area: middle;
+}
+.right {
+  height: 100%;
+  grid-area: right;
+}
+
+.footer {
+  border: 8px solid rgb(255, 255, 255);
+  grid-area: footer;
+  padding: 30px;
+  text-align: center;
+  background: url(../images/footer.jpg) no-repeat center / cover;
+}
+
+.right input[type="text"],
+.right input[type="email"],
+.right input[type="password"],
+.right input[type="tel"],
+.right select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+
+.left img, .middle img {
+  width: 100%;
+  max-width: 700px;
+  object-fit: cover;
+  object-position: center;
+  
+
+}
